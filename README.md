@@ -13,15 +13,12 @@ For Angular 2+ (2, 4, 5, 6, 7)
 	<img src ="https://github.com/tnicola/ngx-joyride/blob/master/docs/joyride-tour.gif" />
 </p>
 
-## Demo
-See the [demo](https://tnicola.github.io/ngx-joyride/). Let's take a tour! ✈️ :earth_americas:
+<!-- ## Demo
+See the [demo](https://tnicola.github.io/ngx-joyride/). Let's take a tour! ✈️ :earth_americas: -->
 
 ## Install
 
-    npm install ngx-joyride --save
-or
-
-    yarn add ngx-joyride
+    npm i ngx-walkthrough-tour --save
 
 ## Usage
 
@@ -100,6 +97,7 @@ startWith | No | The name of the step (plus the route for multi-page navigation)
 waitingTime | No | The time (in milliseconds) to wait before showing the next/prev step. | number | 1
 stepDefaultPosition | No | Define a step default position. The stepPositon set in the directive override this value. | string | bottom
 themeColor | No | Backdrop, buttons and title color. (Hexadecimal value) | string | #3b5560
+backdropColor | No | Backdrop, buttons and title color. (Hexadecimal value) | string | #3b5560
 showCounter | No | Show the counter on the bottom-left. | boolean | true
 showPrevButton | No | Show the "Prev" button. | boolean | true
 logsEnabled | No | Enable logs to see info about the library status. Usuful to get a meaningful error message. | boolean | false
@@ -167,7 +165,8 @@ this.joyrideService.startTour({
     steps: ['step1', 'my-step@home', 'lastStep@home'],
     showPrevButton: false,
     stepDefaultPosition: 'top',
-    themeColor: '#212f23'
+    themeColor: '#212f23',
+    backdropColor: '#212f23'
 });
  ```
 
